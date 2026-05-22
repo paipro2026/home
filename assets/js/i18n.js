@@ -35,7 +35,7 @@
     zh: {
       meta: {
         indexTitle: '派+ · 私人正念与冥想空间',
-        indexDesc: '派+ —— 一款融合动态玻璃质感与军事级隐私保护的私人正念冥想 App。沉浸式场景音景、Face ID 加密日记、智能地理围栏提醒。',
+        indexDesc: '派+ —— 一款融合动态玻璃质感与坚实隐私保护的私人正念冥想 App。沉浸式场景音景、Face ID 加密日记、智能地理围栏提醒。',
         privacyTitle: '隐私政策 · 派+',
         termsTitle: '用户协议 · 派+',
       },
@@ -97,7 +97,7 @@
       },
       privacySec: {
         eyebrow: 'PRIVACY FIRST',
-        title: '军事级隐私，从底层做起。',
+        title: '隐私优先，从底层做起。',
         desc: '派+ 不收集任何可识别的个人数据。所有日记、头像、地理围栏均加密存储于设备本地，App 离开前台即<strong>瞬间锁定</strong>。我们的承诺：你的内心世界，只属于你。',
         p1: 'Face ID / Touch ID 原生加密',
         p2: '无第三方分析 SDK',
