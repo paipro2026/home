@@ -1,275 +1,369 @@
-<!doctype html>
-<html lang="zh-CN" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PaiPro | 智能记账官网</title>
-    <meta
-      name="description"
-      content="PaiPro 是一个简洁、可视化、好上手的记账应用。用更轻的操作记录支出，用更清晰的图表看懂消费结构。"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="parallax-orb orb-1" data-parallax data-speed="0.08" aria-hidden="true"></div>
-    <div class="parallax-orb orb-2" data-parallax data-speed="-0.06" aria-hidden="true"></div>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a14" />
+  <title>派+ · 私人正念与冥想空间</title>
+  <meta name="description" content="派+ —— 一款融合动态玻璃质感与军事级隐私保护的私人正念冥想 App。沉浸式场景音景、Face ID 加密日记、智能地理围栏提醒。" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preload" as="image" href="assets/images/splash-page.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 背景光晕层 -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid"></span>
+  </div>
 
-    <header class="top-nav">
-      <div class="nav-inner">
-        <a class="logo" href="#top">PaiPro</a>
-        <nav class="nav-links">
-          <a href="#features">核心能力</a>
-          <a href="#keynote">发布会动画</a>
-          <a href="#showcase">界面预览</a>
-          <a href="#cta">开始体验</a>
-        </nav>
-        <a class="nav-button" href="#cta">立即体验</a>
-      </div>
-    </header>
+  <!-- 顶部导航 -->
+  <header class="nav glass">
+    <a class="nav-brand" href="#top">
+      <img src="assets/images/logo.png" alt="派+ Logo" />
+      <span>派<small>+</small></span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features">功能</a>
+      <a href="#showcase">界面</a>
+      <a href="#philosophy">理念</a>
+      <a href="#download">下载</a>
+    </nav>
+    <a href="#download" class="btn btn-primary nav-cta">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M17.5 12.5c0-2.4 2-3.5 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.2-2.9.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.6-.9 1-1.8 1.3-2.8-2.4-.9-2.9-3.9-2.9-4Z" fill="currentColor"/>
+        <path d="M15 5.5c.6-.8 1-1.8 1-2.8-.9 0-1.9.6-2.6 1.3-.6.7-1.1 1.7-1 2.7 1 .1 1.9-.5 2.6-1.2Z" fill="currentColor"/>
+      </svg>
+      <span class="nav-text">下载 App</span>
+      <span class="nav-text-short">下载</span>
+    </a>
+  </header>
 
-    <main id="top">
-      <section class="hero section-shell">
-        <p class="eyebrow reveal is-visible">PaiPro · Personal AI Expense Tracker</p>
-        <h1 class="reveal is-visible" style="--delay: 40ms">把每一笔消费，变成可执行的财务洞察。</h1>
-        <p class="hero-subtitle reveal is-visible" style="--delay: 80ms">
-          从“记录支出”到“看懂趋势”，PaiPro 用健康消费比、分类统计和极简操作流程，
-          帮你把记账变成每天都愿意坚持的小习惯。
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="tag glass">
+          <span class="dot"></span>
+          为现代人打造的正念空间
+        </span>
+        <h1 class="hero-title">
+          在喧嚣世界中，<br/>
+          找回<em>属于你</em>的那片宁静。
+        </h1>
+        <p class="hero-sub">
+          派+ 以动态玻璃质感与场景化音景，
+          为你构建私密、安全、智能的冥想伴侣 ——
+          每一次呼吸，都被温柔守护。
         </p>
-        <div class="hero-actions reveal is-visible" style="--delay: 120ms">
-          <a class="btn btn-primary" href="#showcase">查看产品界面</a>
-          <a class="btn btn-secondary" href="#features">了解功能细节</a>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M17.5 12.5c0-2.4 2-3.5 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.2-2.9.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.6-.9 1-1.8 1.3-2.8-2.4-.9-2.9-3.9-2.9-4Z" fill="currentColor"/>
+              <path d="M15 5.5c.6-.8 1-1.8 1-2.8-.9 0-1.9.6-2.6 1.3-.6.7-1.1 1.7-1 2.7 1 .1 1.9-.5 2.6-1.2Z" fill="currentColor"/>
+            </svg>
+            App Store 下载
+          </a>
+          <a href="#features" class="btn btn-ghost btn-lg">了解更多</a>
         </div>
+        <ul class="hero-meta">
+          <li><strong>Face ID</strong><span>隐私加密</span></li>
+          <li><strong>i18n</strong><span>中英双语</span></li>
+          <li><strong>Geofence</strong><span>智能提醒</span></li>
+        </ul>
+      </div>
 
-        <div class="hero-highlights">
-          <article class="highlight-card reveal" style="--delay: 20ms">
-            <p class="highlight-title">Healthy Ratio</p>
-            <p class="highlight-value">¥277</p>
-            <p class="highlight-text">首页环形图一眼看懂当月消费占比。</p>
-          </article>
-          <article class="highlight-card reveal" style="--delay: 120ms">
-            <p class="highlight-title">Quick Add</p>
-            <p class="highlight-value">7+ 分类</p>
-            <p class="highlight-text">餐饮、住房、交通等支出，轻点即可记账。</p>
-          </article>
-          <article class="highlight-card reveal" style="--delay: 220ms">
-            <p class="highlight-title">Category Detail</p>
-            <p class="highlight-value">3 Steps</p>
-            <p class="highlight-text">总额、明细、日期同屏展示，复盘更直接。</p>
-          </article>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <img class="phone-screen" src="assets/images/splash-page.png" alt="" />
+          <div class="phone-glow"></div>
         </div>
-
-        <div class="hero-visual reveal" style="--delay: 100ms">
-          <img
-            src="images/photo_1_2026-05-09_17-38-31.jpg"
-            alt="PaiPro 首页消费占比界面"
-            class="shot shot-main parallax-media"
-            data-parallax
-            data-speed="0.14"
-            loading="lazy"
-          />
-          <img
-            src="images/photo_2_2026-05-09_17-38-31.jpg"
-            alt="PaiPro 新增支出界面"
-            class="shot shot-side parallax-media"
-            data-parallax
-            data-speed="-0.1"
-            loading="lazy"
-          />
-        </div>
-      </section>
-
-      <section class="section-shell" id="features">
-        <div class="section-title-wrap reveal">
-          <p class="eyebrow">核心能力</p>
-          <h2>轻、快、准的记账体验</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature reveal" style="--delay: 0ms">
-            <h3>可视化首页</h3>
-            <p>
-              首页环形图展示 Food &amp; Dining、Housing &amp; Bills、Other 等分类占比，
-              同时保留金额和进度条，快速识别消费结构。
-            </p>
-          </article>
-          <article class="feature reveal" style="--delay: 90ms">
-            <h3>极速记一笔</h3>
-            <p>
-              Add Expense 页面将金额输入、分类选择、备注输入整合在同一屏，减少跳转和中断，
-              让记录成本接近“零心智负担”。
-            </p>
-          </article>
-          <article class="feature reveal" style="--delay: 0ms">
-            <h3>分类追踪明细</h3>
-            <p>
-              进入单个分类后，可直接查看总额、笔数和每一笔支出明细（含日期与备注），
-              适合日常复盘和预算控制。
-            </p>
-          </article>
-          <article class="feature reveal" style="--delay: 90ms">
-            <h3>账户中心</h3>
-            <p>
-              统一管理 Category、Dark Mode 等偏好设置，搭配 Sign In / Register
-              流程，保障从首次使用到长期记账都保持一致的体验。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="keynote-stage" id="keynote">
-        <div class="stage-panel panel-a">
-          <div class="stage-inner section-shell">
-            <div class="stage-copy reveal">
-              <p class="eyebrow">Apple Keynote Style</p>
-              <h2>滚动时，重点自动上场。</h2>
-              <p>
-                我们把“看总览”和“记新账”做成舞台式叙事：当你向下滚动，文案与界面分层进入，
-                让核心价值逐段放大，而不是一次性平铺信息。
-              </p>
-            </div>
-            <div class="stage-media">
-              <img
-                src="images/photo_1_2026-05-09_17-38-31.jpg"
-                alt="PaiPro 总览界面"
-                class="stage-shot stage-shot-front parallax-media"
-                data-parallax
-                data-speed="0.1"
-                loading="lazy"
-              />
-              <img
-                src="images/photo_2_2026-05-09_17-38-31.jpg"
-                alt="PaiPro 记账界面"
-                class="stage-shot stage-shot-back parallax-media"
-                data-parallax
-                data-speed="-0.07"
-                loading="lazy"
-              />
-            </div>
+        <div class="float-card glass card-breath">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M4 12c4 0 5-3 8-3s4 3 8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M4 16c4 0 5-3 8-3s4 3 8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>
+            </svg>
+          </span>
+          <div>
+            <p class="ttl">呼吸 · 3 分钟</p>
+            <p class="sub">心率下降 12 BPM</p>
           </div>
         </div>
-
-        <div class="stage-panel panel-b">
-          <div class="stage-inner section-shell">
-            <div class="stage-copy reveal">
-              <p class="eyebrow">Storytelling Scroll</p>
-              <h2>从账户到明细，形成完整闭环。</h2>
-              <p>
-                第二段强调“长期使用体验”：账户管理、分类详情、登录注册依次出场，
-                帮用户快速理解 PaiPro 的完整路径与产品成熟度。
-              </p>
-              <div class="stage-metrics">
-                <article>
-                  <h3>01</h3>
-                  <p>总览看趋势</p>
-                </article>
-                <article>
-                  <h3>02</h3>
-                  <p>一键记支出</p>
-                </article>
-                <article>
-                  <h3>03</h3>
-                  <p>分类做复盘</p>
-                </article>
-              </div>
-            </div>
-            <div class="stage-media stage-media-grid">
-              <img
-                src="images/photo_3_2026-05-09_17-38-31.jpg"
-                alt="PaiPro 我的页面"
-                class="stage-shot stage-grid-a parallax-media"
-                data-parallax
-                data-speed="0.09"
-                loading="lazy"
-              />
-              <img
-                src="images/photo_4_2026-05-09_17-38-31.jpg"
-                alt="PaiPro 分类详情页面"
-                class="stage-shot stage-grid-b parallax-media"
-                data-parallax
-                data-speed="-0.08"
-                loading="lazy"
-              />
-              <img
-                src="images/photo_5_2026-05-09_17-38-31.jpg"
-                alt="PaiPro 登录页面"
-                class="stage-shot stage-grid-c parallax-media"
-                data-parallax
-                data-speed="0.12"
-                loading="lazy"
-              />
-            </div>
+        <div class="float-card glass card-lock">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="10" width="14" height="10" rx="2.5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <div>
+            <p class="ttl">日记已上锁</p>
+            <p class="sub">Face ID 守护</p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
 
-      <section class="section-shell showcase" id="showcase">
-        <div class="section-title-wrap reveal">
-          <p class="eyebrow">界面预览</p>
-          <h2>每个关键场景，都被精心设计</h2>
-        </div>
-        <div class="showcase-grid">
-          <figure class="showcase-item reveal" style="--delay: 0ms">
-            <img src="images/photo_1_2026-05-09_17-38-31.jpg" alt="首页总览" loading="lazy" />
-            <figcaption>Home · 消费结构总览</figcaption>
-          </figure>
-          <figure class="showcase-item reveal" style="--delay: 80ms">
-            <img src="images/photo_2_2026-05-09_17-38-31.jpg" alt="新增支出" loading="lazy" />
-            <figcaption>Add Expense · 快速记账</figcaption>
-          </figure>
-          <figure class="showcase-item reveal" style="--delay: 160ms">
-            <img src="images/photo_4_2026-05-09_17-38-31.jpg" alt="分类详情" loading="lazy" />
-            <figcaption>Category Detail · 分类明细</figcaption>
-          </figure>
-          <figure class="showcase-item reveal" style="--delay: 0ms">
-            <img src="images/photo_3_2026-05-09_17-38-31.jpg" alt="我的账户" loading="lazy" />
-            <figcaption>Me · 账户与偏好设置</figcaption>
-          </figure>
-          <figure class="showcase-item reveal" style="--delay: 80ms">
-            <img src="images/photo_5_2026-05-09_17-38-31.jpg" alt="登录页面" loading="lazy" />
-            <figcaption>Sign In · 安全登录</figcaption>
-          </figure>
-          <figure class="showcase-item reveal" style="--delay: 160ms">
-            <img src="images/photo_6_2026-05-09_17-38-31.jpg" alt="注册页面" loading="lazy" />
-            <figcaption>Create Account · 新用户引导</figcaption>
-          </figure>
-        </div>
-      </section>
+  <!-- 核心功能 -->
+  <section class="section" id="features">
+    <div class="container">
+      <header class="section-head fade-in">
+        <span class="eyebrow">CORE FEATURES</span>
+        <h2 class="section-title">为<em>心灵</em>设计的六大模块</h2>
+        <p class="section-desc">围绕「隐私安全 · 心灵宁静 · 智能体验」三大主轴，每一个细节都旨在让你专注当下。</p>
+      </header>
 
-      <section class="section-shell value-panel reveal">
-        <div class="value-copy">
-          <p class="eyebrow">为什么是 PaiPro</p>
-          <h2>简洁、克制的智能记账工具。</h2>
-          <p>
-            PaiPro 以“最少操作 + 最清晰反馈”为设计原则，减少输入负担，增强可视化反馈，
-            让记账不再是任务，而是一种自然发生的日常行为。
-          </p>
-        </div>
-        <div class="value-points">
-          <article class="reveal" style="--delay: 0ms">
-            <h3>01</h3>
-            <p>从登录到记账，流程简洁统一，学习成本低。</p>
-          </article>
-          <article class="reveal" style="--delay: 80ms">
-            <h3>02</h3>
-            <p>以分类和金额为核心，不淹没在复杂报表里。</p>
-          </article>
-          <article class="reveal" style="--delay: 160ms">
-            <h3>03</h3>
-            <p>支持暗色模式与分类管理，长期使用更舒适。</p>
-          </article>
-        </div>
-      </section>
+      <div class="feature-grid">
+        <article class="feature-card glass fade-in">
+          <div class="feature-icon icon-blue">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M3 12c4 0 5-4 9-4s5 4 9 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M3 17c4 0 5-4 9-4s5 4 9 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".5"/>
+            </svg>
+          </div>
+          <h3>场景化冥想与专注</h3>
+          <p>深度睡眠、清晨唤醒、自然流水…… 多场景沉浸式音景陪伴每一个时刻。</p>
+          <div class="feature-tags">
+            <span>Liquid Glass</span><span>沉浸音景</span>
+          </div>
+        </article>
 
-      <section class="section-shell cta reveal" id="cta">
-        <p class="eyebrow">Ready to start</p>
-        <h2>开始使用 PaiPro，掌控你的每一笔支出。</h2>
-        <p>更好的财务状态，从今天这一笔开始。</p>
-        <a class="btn btn-primary" href="#top">立即开始体验</a>
-      </section>
-    </main>
+        <article class="feature-card glass fade-in" data-delay="100">
+          <div class="feature-icon icon-purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="10" width="14" height="10" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="15" r="1.4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Face ID 加密日记</h3>
+          <p>面容/指纹级别的原生防护，切到后台<strong>瞬间上锁</strong>，让心事永远只属于你。</p>
+          <div class="feature-tags">
+            <span>Biometric Lock</span><span>后台自动加锁</span>
+          </div>
+        </article>
 
-    <footer class="footer">
-      <p>© 2026 Polat Hamarat. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <article class="feature-card glass fade-in" data-delay="200">
+          <div class="feature-icon icon-cyan">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3>智能地理围栏提醒</h3>
+          <p>抵达「外滩」「瑜伽馆」时，温柔通知提醒你停下脚步，深呼吸三次。</p>
+          <div class="feature-tags">
+            <span>Geofencing</span><span>低能耗后台</span>
+          </div>
+        </article>
+
+        <article class="feature-card glass fade-in" data-delay="100">
+          <div class="feature-icon icon-pink">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17" cy="10" r="2.6" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 19c.6-3 3-5 6-5s5.4 2 6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M14 18c.4-2 2-3.5 4-3.5s3.6 1.5 4 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <h3>纯净的好友分享</h3>
+          <p>原生通讯录选择列表，精准邀请在意的人，一起踏上正念之旅。</p>
+          <div class="feature-tags">
+            <span>原生联系人</span><span>无第三方追踪</span>
+          </div>
+        </article>
+
+        <article class="feature-card glass fade-in" data-delay="200">
+          <div class="feature-icon icon-amber">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4 21c1-4 4.5-6 8-6s7 2 8 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>极致个性化定制</h3>
+          <p>从相册自由选取头像、自定义昵称，所有数据安全持久化保存在本地。</p>
+          <div class="feature-tags">
+            <span>专属档案</span><span>本地持久化</span>
+          </div>
+        </article>
+
+        <article class="feature-card glass fade-in" data-delay="300">
+          <div class="feature-icon icon-green">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M3 12h4l3-8 4 16 3-8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>中英双语 · 全球陪伴</h3>
+          <p>全面 i18n 国际化支持，无论你身在何处，正念的语言皆能相通。</p>
+          <div class="feature-tags">
+            <span>简体中文</span><span>English</span><span>随系统切换</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 界面展示 -->
+  <section class="section section-showcase" id="showcase">
+    <div class="container">
+      <header class="section-head fade-in">
+        <span class="eyebrow">IN-APP EXPERIENCE</span>
+        <h2 class="section-title">每一帧，皆为<em>沉浸</em>而生</h2>
+        <p class="section-desc">动态玻璃 · 渐层光感 · 一致设计语言 —— 派+ 的每一处交互都在传递「平静」。</p>
+      </header>
+
+      <div class="showcase-stage">
+        <div class="phone-card fade-in" data-tilt="-6">
+          <div class="phone-frame phone-frame--sm">
+            <div class="phone-notch"></div>
+            <img src="assets/images/app-screenshot-1.jpg" alt="冥想主题列表" loading="lazy" />
+          </div>
+          <p class="phone-caption">冥想主题</p>
+        </div>
+        <div class="phone-card phone-card--center fade-in" data-delay="100">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <img src="assets/images/app-screenshot-2.jpg" alt="选择冥想时长" loading="lazy" />
+            <div class="phone-glow"></div>
+          </div>
+          <p class="phone-caption">沉浸时长选择</p>
+        </div>
+        <div class="phone-card fade-in" data-delay="200" data-tilt="6">
+          <div class="phone-frame phone-frame--sm">
+            <div class="phone-notch"></div>
+            <img src="assets/images/app-screenshot-3.jpg" alt="个性化设置" loading="lazy" />
+          </div>
+          <p class="phone-caption">专属档案设置</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 理念三页 -->
+  <section class="section section-philosophy" id="philosophy">
+    <div class="container">
+      <header class="section-head fade-in">
+        <span class="eyebrow">OUR PHILOSOPHY</span>
+        <h2 class="section-title">呼吸 · 放松 · 入眠</h2>
+        <p class="section-desc">三段式的引导，温柔陪你完成每一次正念回归。</p>
+      </header>
+
+      <div class="philosophy-grid">
+        <article class="philo-card glass fade-in">
+          <img src="assets/images/splash-screen-1.jpg" alt="呼吸 · 在每一次的呼吸中，找回内心的平静" loading="lazy" />
+        </article>
+        <article class="philo-card glass fade-in" data-delay="120">
+          <img src="assets/images/splash-screen-2.jpg" alt="放松 · 卸下一天的疲惫，让身体回归自然" loading="lazy" />
+        </article>
+        <article class="philo-card glass fade-in" data-delay="240">
+          <img src="assets/images/splash-screen-3.jpg" alt="入眠 · 在柔和的白噪音中，安然入睡" loading="lazy" />
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 隐私保障 -->
+  <section class="section section-privacy">
+    <div class="container">
+      <div class="privacy-banner glass fade-in">
+        <div class="privacy-icon" aria-hidden="true">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="privacy-text">
+          <span class="eyebrow">PRIVACY FIRST</span>
+          <h2>军事级隐私，从底层做起。</h2>
+          <p>派+ 不收集任何可识别的个人数据。所有日记、头像、地理围栏均加密存储于设备本地，App 离开前台即<strong>瞬间锁定</strong>。我们的承诺：你的内心世界，只属于你。</p>
+          <ul class="privacy-points">
+            <li>Face ID / Touch ID 原生加密</li>
+            <li>无第三方分析 SDK</li>
+            <li>地理围栏数据仅本地处理</li>
+            <li>切换后台自动加锁</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下载 -->
+  <section class="section section-download" id="download">
+    <div class="container">
+      <div class="download-card glass fade-in">
+        <span class="eyebrow">START TODAY</span>
+        <h2>开始你的正念旅程</h2>
+        <p>从呼吸开始 —— 让派+ 成为你忙碌生活中那一片，永远为你预留的宁静。</p>
+        <div class="download-actions">
+          <a href="#" class="btn btn-primary btn-xl">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M17.5 12.5c0-2.4 2-3.5 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.2-2.9.9-3.6.9-.7 0-1.9-.9-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.6-.9 1-1.8 1.3-2.8-2.4-.9-2.9-3.9-2.9-4Z" fill="currentColor"/>
+              <path d="M15 5.5c.6-.8 1-1.8 1-2.8-.9 0-1.9.6-2.6 1.3-.6.7-1.1 1.7-1 2.7 1 .1 1.9-.5 2.6-1.2Z" fill="currentColor"/>
+            </svg>
+            <span class="dl-text">
+              <small>Download on the</small>
+              App Store
+            </span>
+          </a>
+          <a href="#" class="btn btn-outline btn-xl">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4v16l8-8-8-8Z" fill="currentColor"/>
+              <path d="m12 12 8 4-3-12-5 8Z" fill="currentColor" opacity=".75"/>
+            </svg>
+            <span class="dl-text">
+              <small>Coming Soon</small>
+              Android Version
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="" />
+        <div>
+          <p class="footer-name">派+</p>
+          <p class="footer-tag">Mindful · Private · Beautiful</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="页脚导航">
+        <div>
+          <h4>产品</h4>
+          <a href="#features">功能</a>
+          <a href="#showcase">界面</a>
+          <a href="#download">下载</a>
+        </div>
+        <div>
+          <h4>合规</h4>
+          <a href="privacy.html">隐私政策</a>
+          <a href="terms.html">用户协议</a>
+        </div>
+        <div>
+          <h4>联系</h4>
+          <a href="mailto:support@paipro.app">support@paipro.app</a>
+          <a href="#">@PaiProApp</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> 派+. All rights reserved.</span>
+      <span>Made with ☁ for inner peace.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
