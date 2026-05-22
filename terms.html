@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body data-page="terms">
   <div class="bg-aurora" aria-hidden="true">
     <span class="orb orb-1"></span>
     <span class="orb orb-3"></span>
@@ -20,65 +20,42 @@
       <span>派<small>+</small></span>
     </a>
     <nav class="nav-links" aria-label="主导航">
-      <a href="index.html#features">功能</a>
-      <a href="index.html#showcase">界面</a>
-      <a href="index.html#philosophy">理念</a>
-      <a href="index.html#download">下载</a>
+      <a href="index.html#features" data-i18n="nav.features">功能</a>
+      <a href="index.html#showcase" data-i18n="nav.showcase">界面</a>
+      <a href="index.html#philosophy" data-i18n="nav.philosophy">理念</a>
+      <a href="index.html#download" data-i18n="nav.download">下载</a>
     </nav>
-    <a href="index.html#download" class="btn btn-primary nav-cta">返回首页</a>
+    <div class="nav-actions">
+      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch to Chinese">
+        <svg class="lang-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M3 12h18M12 3c2.5 2.8 3.8 6 3.8 9s-1.3 6.2-3.8 9M12 3C9.5 5.8 8.2 9 8.2 12s1.3 6.2 3.8 9" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span class="lang-toggle-text">中</span>
+      </button>
+      <a href="index.html" class="btn btn-primary nav-cta nav-cta--back">
+        <span class="nav-cta-label" data-i18n="nav.backHome">返回首页</span>
+      </a>
+    </div>
   </header>
 
   <main>
     <article class="legal-page glass">
-      <a class="legal-back" href="index.html">← 返回首页</a>
-      <h1>用户协议</h1>
-      <p class="legal-meta">最后更新日期：2026 年 1 月 1 日</p>
-
-      <p>
-        欢迎使用派+（以下简称「本应用」）。本《用户协议》是您与本应用之间就使用本应用所达成的协议。
-        在您下载、安装或使用本应用前，请仔细阅读并充分理解本协议。一旦使用本应用，即表示您同意接受本协议的全部条款。
-      </p>
-
-      <h2>1. 服务说明</h2>
-      <p>本应用是一款专为现代人打造的私人正念与冥想空间，提供场景化音景、加密日记、地理围栏提醒、好友邀请等功能。</p>
-
-      <h2>2. 账号与数据</h2>
-      <p>本应用无需注册账号，所有数据安全持久化保存在您的设备本地。您应妥善保管您的设备以防数据泄露或丢失。</p>
-
-      <h2>3. 使用规范</h2>
-      <ul>
-        <li>请勿利用本应用从事任何违反法律法规或公序良俗的活动；</li>
-        <li>请勿对本应用进行反向工程、反编译或破解；</li>
-        <li>请勿利用本应用上传或传播任何侵犯他人合法权益的内容。</li>
-      </ul>
-
-      <h2>4. 健康与免责声明</h2>
-      <p>本应用提供的冥想、放松内容旨在帮助您放松身心，<strong>不构成任何医疗诊断、治疗或替代专业医学建议</strong>。
-        如您有相关身心健康问题，请遵医嘱并寻求专业帮助。</p>
-
-      <h2>5. 知识产权</h2>
-      <p>本应用的全部界面、图标、文字、音频、视频等内容的著作权及其他相关权利均归本应用开发者所有，受相关法律保护。
-        未经书面授权，任何人不得复制、修改、分发或用于商业用途。</p>
-
-      <h2>6. 服务的变更与终止</h2>
-      <p>我们保留根据业务需要变更、暂停或终止本应用部分或全部服务的权利。如发生重大变更，我们将通过应用内通知或官网公告等方式告知用户。</p>
-
-      <h2>7. 法律适用</h2>
-      <p>本协议的订立、执行和解释及争议的解决均适用中华人民共和国法律。如双方就本协议内容或其执行发生任何争议，
-        应尽量友好协商解决；协商不成时，任何一方均可向有管辖权的人民法院提起诉讼。</p>
-
-      <h2>8. 联系我们</h2>
-      <p>📧 <a href="mailto:support@paipro.app">support@paipro.app</a></p>
+      <a class="legal-back" href="index.html" data-i18n="legal.back">← 返回首页</a>
+      <h1 data-legal-title>用户协议</h1>
+      <p class="legal-meta" data-legal-meta>生效日期：2026 年 5 月 20 日</p>
+      <div id="legal-body"></div>
     </article>
   </main>
 
   <footer class="footer">
     <div class="footer-bottom container">
-      <span>© <span id="year"></span> 派+. All rights reserved.</span>
-      <span>Made with ☁ for inner peace.</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">派+. All rights reserved.</span></span>
+      <span data-i18n="footer.made">Made with ☁ for inner peace.</span>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
